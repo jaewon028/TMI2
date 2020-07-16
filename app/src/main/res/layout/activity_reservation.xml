@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reservation">
+
+
+    <!--출발지 목적지 Spinner-->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="79dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="60dp">
+
+        <Spinner
+            android:id="@+id/spinnerDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinnerDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <!--    날짜와 시간 spinner-->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="432dp">
+
+        <Button
+            android:id="@+id/btnchangedate"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="mOnClick"
+            android:text="출발날짜" />
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="date"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnchangetime"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:onClick="mOnClick"
+            android:text="출발시간" />
+
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:text="time"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+<!--    인원 수 spinner-->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="432dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인원"
+            android:textSize="30sp"
+            tools:ignore="InvalidId" />
+
+        <Spinner
+            android:id="@+id/spinnerNumppl"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+<!--    좌석 선택-->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="149dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="432dp">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:text="CheckBox"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:text="CheckBox"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:text="CheckBox"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:text="CheckBox"></CheckBox>
+
+    </LinearLayout>
+    <Button
+        android:text="Button"
+        android:id="@+id/btnSeatResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp"></TextView>
+<!--    submit button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="192dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textSize="36sp"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="195dp" />
+    </LinearLayout>
+
+</LinearLayout>

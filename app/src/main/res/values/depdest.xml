@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="departure">
+        <item>서울</item>
+        <item>부산</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>울산</item>
+    </string-array>
+
+    <string-array name="destination">
+        <item>서울</item>
+        <item>부산</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>울산</item>
+    </string-array>
+
+</resources>
